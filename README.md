@@ -38,7 +38,7 @@ Self-exploratory Streamlit app to know more about palmer penguins.
 
 + Install streamlit and other dependencies as mentioned in **Requirements**
 + Clone the repository: ```git clone https://github.com/maladeep/palmerpenguins-streamlit-eda.git```
-+ Run as ```streamlit run app.py``
++ Run as ```streamlit run app.py```
 
  OR
  
