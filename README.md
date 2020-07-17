@@ -6,6 +6,12 @@ Self-exploratory Streamlit app to know more about palmer penguins.
 > The data was collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and [Palmer Station, Antarctica, LTER.](https://pal.lternet.edu/)
 
 
+
+![Palmerpenguins](https://user-images.githubusercontent.com/25213850/87749976-de726d00-c819-11ea-950c-a9bda29d4d3b.gif)
+
+
+
+
 ### Run yourself: https://explore-palmer-penguins.herokuapp.com
 
 1. It provides interactive tools to explore [palmerpenguins dataset](https://github.com/allisonhorst/palmerpenguins).
