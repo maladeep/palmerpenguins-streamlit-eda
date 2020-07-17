@@ -72,7 +72,7 @@ def load_data(nrows):
 # Loading data
 # df = load_data(100000)
 # original_data = df
-st.header("Let's Explore the Palmerpenguins")
+st.header("Let's Explore the Palmer Penguins")
 # Create a text element and let the reader know the data is loading.
 data_load_state = st.text('Loading palmerpenguins dataset...')
     # Load 10,000 rows of data into the dataframe.
