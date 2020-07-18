@@ -163,13 +163,13 @@ st.markdown("# Inspire Yourself")
 if st.button("Viz by Tableau Community"):
     img=Image.open('images/D1.png')
     st.subheader("Viz by [Scott Renfree-Tuck](https://public.tableau.com/profile/scott.renfree.tuck#!/vizhome/MakeoverMondayW282020-PalmersPenguins/Dashboard2)")
-    st.image(img)
+    st.image(img,width=950)
     st.subheader("Viz by  [Agata Ketterick](https://public.tableau.com/profile/agata1619#!/vizhome/PalmerPenguinsMakeoverMonday2020_28/Penguins)")
     img2=Image.open('images/D2.png')
-    st.image(img2)
+    st.image(img2,width=950)
     img3=Image.open('images/D3.png')
     st.subheader("Viz by [Swati Dave](https://public.tableau.com/profile/swati.dave#!/vizhome/PenguinParadox/PenguinStory)")
-    st.image(img3)
+    st.image(img3,width=950)
 
 st.markdown(" > Thank you for exploring palmerpenguins. This is my first Streamlit work. Feedbacks are highly welcomed.")
 
