@@ -69,10 +69,21 @@ def load_data(nrows):
 
 
 
+st.markdown("### Click the button below to explore the dataset through my visualization")
+if st.button("Visualization created by Author "):
+    img=Image.open('images/Palmer Penguins.png')
+    st.image(img,width=700, caption="Viz. created by Author. 🐧")
+
+    st.markdown(
+    " **Takeaway:** Gento is *most massive & most gigantic* with an average body mass 5.08 Kg & average flipper length 217 mm.")
+   
+
+st.markdown("-----")
+
 # Loading data
 # df = load_data(100000)
 # original_data = df
-st.header("Let's Explore the Palmer Penguins")
+st.header("Now, Explore Yourself the Palmer Penguins")
 # Create a text element and let the reader know the data is loading.
 data_load_state = st.text('Loading palmerpenguins dataset...')
     # Load 10,000 rows of data into the dataframe.
@@ -80,6 +91,8 @@ df = load_data(100000)
     # Notify the reader that the data was successfully loaded.
 data_load_state.text('Loading palmerpenguins dataset...Completed!')
 
+images=Image.open('images/meet.png')
+st.image(images,width=600)
 
 
 
