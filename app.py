@@ -69,7 +69,7 @@ def load_data(nrows):
 
 
 
-st.markdown("### Click the button below to explore the dataset through my visualization")
+st.markdown("### Click the button below to explore the dataset through my visualization.")
 if st.button("Visualization created by Author "):
     img=Image.open('images/Palmer Penguins.png')
     st.image(img,width=700, caption="Viz. created by Author. 🐧")
@@ -136,20 +136,22 @@ st.sidebar.subheader('Create Own Visualization')
 if st.sidebar.checkbox('Graphics'):
     if st.sidebar.checkbox('Count Plot'):
         st.subheader('Count Plot')
+        st.info("If error, please adjust column name on side panel.")
         column_count_plot = st.sidebar.selectbox("Choose a column to plot count. Try Selecting Sex ",df.columns)
         hue_opt = st.sidebar.selectbox("Optional categorical variables (countplot hue). Try Selecting Species ",df.columns.insert(0,None))
-        if st.checkbox('Plot Countplot'):
-            fig = sns.countplot(x=column_count_plot,data=df,hue=hue_opt)
-            st.pyplot()
+        # if st.checkbox('Plot Countplot'):
+        fig = sns.countplot(x=column_count_plot,data=df,hue=hue_opt)
+        st.pyplot()
             
             
     if st.sidebar.checkbox('Histogram | Distplot'):
         st.subheader('Histogram | Distplot')
-        if st.checkbox('Dist plot'):
-            column_dist_plot = st.sidebar.selectbox("Optional categorical variables (countplot hue). Try Selecting Body Mass",df.columns)
-            fig = sns.distplot(df[column_dist_plot])
+        st.info("If error, please adjust column name on side panel.")
+        # if st.checkbox('Dist plot'):
+        column_dist_plot = st.sidebar.selectbox("Optional categorical variables (countplot hue). Try Selecting Body Mass",df.columns)
+        fig = sns.distplot(df[column_dist_plot])
             # fig = px.scatter(x=[0, 1, 2, 3, 4], y=[0, 1, 4, 9, 16])
-            st.pyplot()
+        st.pyplot()
             
             
     # if st.sidebar.checkbox('Heatmap'):
@@ -160,12 +162,13 @@ if st.sidebar.checkbox('Graphics'):
         
     if st.sidebar.checkbox('Boxplot'):
         st.subheader('Boxplot')
+        st.info("If error, please adjust column name on side panel.")
         column_box_plot_X = st.sidebar.selectbox("X (Choose a column). Try Selecting island:",df.columns.insert(0,None))
         column_box_plot_Y = st.sidebar.selectbox("Y (Choose a column - only numerical). Try Selecting Body Mass",df.columns)
         hue_box_opt = st.sidebar.selectbox("Optional categorical variables (boxplot hue)",df.columns.insert(0,None))
-        if st.checkbox('Plot Boxplot'):
-            fig = sns.boxplot(x=column_box_plot_X, y=column_box_plot_Y,data=df,palette="Set3")
-            st.pyplot()
+        # if st.checkbox('Plot Boxplot'):
+        fig = sns.boxplot(x=column_box_plot_X, y=column_box_plot_Y,data=df,palette="Set3")
+        st.pyplot()
     # if st.sidebar.checkbox('Pairplot'):
     #     st.subheader('Pairplot')
     #     hue_pp_opt = st.sidebar.selectbox("Optional categorical variables (pairplot hue)",df.columns.insert(0,None))
