@@ -13,7 +13,7 @@ Self-exploratory Streamlit app to know more about palmer penguins.
 
 
 
-## Run yourself: https://explore-palmer-penguins.herokuapp.com
+## See App yourself: [Run app](https://maladeep-palmerpenguins-streamlit-eda-app-0qr9u3.streamlit.app)
 
 1. It provides interactive tools to explore [palmerpenguins dataset](https://github.com/allisonhorst/palmerpenguins).
 
@@ -42,7 +42,7 @@ Self-exploratory Streamlit app to know more about palmer penguins.
 
  OR
  
- > Simply run the web app https://explore-palmer-penguins.herokuapp.com
+ > Simply run the [web app](https://maladeep-palmerpenguins-streamlit-eda-app-0qr9u3.streamlit.app)
 
 
 
