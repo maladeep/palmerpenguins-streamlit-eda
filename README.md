@@ -44,7 +44,8 @@ Self-exploratory Streamlit app to know more about palmer penguins.
  
  > Simply run the [web app](https://maladeep-palmerpenguins-streamlit-eda-app-0qr9u3.streamlit.app)
 
-
+OR
+> Know Step by Step method of creating at [Towards Data Science](https://medium.com/towards-data-science/build-your-first-data-visualization-web-app-in-python-using-streamlit-37e4c83a85db)
 
 
 
